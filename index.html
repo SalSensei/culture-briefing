@@ -12,9 +12,9 @@
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
   body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;min-height:100vh}
   body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000}
-  .page{max-width:880px;margin:0 auto;padding:0 20px 80px}.site-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 16px;border-bottom:1px solid var(--rule-light)}.site-nav-brand{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.site-nav-links{display:flex;flex-wrap:wrap;gap:10px 18px}.site-nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none}.site-nav-links a:hover{color:var(--accent-1)}.masthead{padding:40px 0 40px;border-bottom:2px solid var(--ink)}.masthead-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}.masthead-title{font-family:var(--serif);font-size:clamp(38px,7vw,68px);font-weight:900;line-height:1.05;letter-spacing:-.02em;margin-bottom:6px}.masthead-title em{font-style:italic;color:var(--accent-1)}.masthead-date{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.08em;margin-top:12px}
+  .page{max-width:880px;margin:0 auto;padding:0 20px 80px}.masthead{padding:60px 0 40px;border-bottom:2px solid var(--ink)}.masthead-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}.masthead-title{font-family:var(--serif);font-size:clamp(38px,7vw,68px);font-weight:900;line-height:1.05;letter-spacing:-.02em;margin-bottom:6px}.masthead-title em{font-style:italic;color:var(--accent-1)}.masthead-date{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.08em;margin-top:12px}
   .overview{background:var(--ink);color:var(--cream);padding:36px 40px;position:relative;overflow:hidden}.overview::after{content:'今日';position:absolute;right:-10px;top:-20px;font-family:var(--serif);font-size:130px;font-weight:900;opacity:.05;line-height:1}.overview-label{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px}.overview-label::after{content:'';flex:1;height:1px;background:var(--gold);opacity:.3;max-width:60px}.overview-meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-bottom:24px}.meta-chip{font-family:var(--mono);font-size:11px;color:rgba(250,248,244,.6);letter-spacing:.05em}.meta-chip span{color:rgba(250,248,244,.9)}.overview-bullets{list-style:none;display:flex;flex-direction:column;gap:10px}.overview-bullets li{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.6;color:rgba(250,248,244,.85)}.overview-bullets li::before{content:'–';color:var(--gold)}
-  .top-picks{background:var(--paper-2);border-bottom:1px solid var(--rule);padding:20px 40px;display:flex;flex-wrap:wrap;gap:6px 28px;align-items:center}.top-picks-label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.top-pick-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink);text-decoration:none;font-weight:600}.top-pick-item:hover{color:var(--accent-1)}.edition-access{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:22px}.edition-card,.archive-card{background:var(--cream);border:1px solid var(--rule-light);border-radius:var(--r-md);padding:18px 20px}.edition-label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}.edition-title{font-family:var(--serif);font-size:24px;line-height:1.2;margin-bottom:8px}.edition-copy,.archive-copy{font-size:14px;color:#4f4943}.edition-actions,.archive-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.btn-primary,.btn-secondary{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 16px;text-decoration:none;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.btn-primary{background:var(--accent-1);color:#fff}.btn-secondary{border:1px solid var(--rule);color:var(--ink)}.archive-mini-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:12px}.archive-mini-list a{color:var(--ink);text-decoration:none;font-size:14px}.archive-mini-list a:hover{text-decoration:underline}
+  .top-picks{background:var(--paper-2);border-bottom:1px solid var(--rule);padding:20px 40px;display:flex;flex-wrap:wrap;gap:6px 28px;align-items:center}.top-picks-label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.top-pick-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink);text-decoration:none;font-weight:600}.top-pick-item:hover{color:var(--accent-1)}
   .section{margin-top:60px}.section-header{display:flex;align-items:center;gap:16px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid var(--rule)}.section-number{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--muted)}.section-accent-bar{width:4px;height:36px;border-radius:2px}.section-title{font-family:var(--serif);font-size:28px;font-weight:700}.section-subtitle{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
   .subsection-label{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:12px}.subsection-label::after{content:'';flex:1;height:1px;background:var(--rule-light)}
   .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:36px}.card-grid.single{grid-template-columns:1fr}
@@ -27,17 +27,8 @@
 </head>
 <body>
 <div class="page">
-<nav class="site-nav">
-  <div class="site-nav-brand">Global Culture Briefing</div>
-  <div class="site-nav-links">
-    <a href="#today">今日晨报</a>
-    <a href="#top-picks">今日首选</a>
-    <a href="./archive/">最近 10 期</a>
-    <a href="https://github.com/SalSensei/culture-briefing" target="_blank" rel="noopener">GitHub</a>
-  </div>
-</nav>
-<header class="masthead" id="today">
-  <h1 class="masthead-title">全球文化<br><em>资讯晨报</em></h1>
+<header class="masthead">
+    <h1 class="masthead-title">全球文化<br><em>资讯晨报</em></h1>
   <div class="masthead-date">2026 · 03 · 08 &nbsp;/&nbsp; Sunday &nbsp;/&nbsp; Asia/Shanghai 09:00</div>
 </header>
 
@@ -50,14 +41,14 @@
     <div class="meta-chip">视角 <span>全球文化</span></div>
   </div>
   <ul class="overview-bullets">
-    <li>本日文化消费的主线是“高完成度优先”：音乐、电影与游戏端都出现了口碑相对集中的稳妥选择，适合周末优先消化。</li>
-    <li>影视与剧集的共同趋势是“中体量精品回归”，不靠巨量设定而以人物关系、叙事节奏和情绪密度取胜。</li>
-    <li>书籍与行业观察显示，编辑筛选与奖项长名单重新成为读者决策锚点，适合先看评论再决定投入时间。</li>
-    <li>跨领域看，平台分发正在把“可见度”变成内容竞争核心：被看见，几乎与做得好同样重要。</li>
+    <li>今天最值得优先看的，不是噱头最大的内容，而是完成度高、口碑稳定、现在就能安心消费的作品。</li>
+    <li>电影和剧集这边，一个明显趋势是：不靠大场面硬撑，而是靠人物关系、叙事节奏和情绪张力把内容立住。</li>
+    <li>书籍领域更适合先看编辑筛选和奖项名单，再决定把时间投给哪一本，这样更省时间，也更不容易踩空。</li>
+    <li>放到所有领域一起看，一个共同问题是：内容做得好还不够，能不能被看见，越来越决定它能不能真正跑出来。</li>
   </ul>
 </section>
 
-<nav class="top-picks" id="top-picks">
+<nav class="top-picks">
   <span class="top-picks-label">今日首选</span>
   <a class="top-pick-item" href="https://pitchfork.com/reviews/albums/blackpink-deadline-ep/" target="_blank" rel="noopener"><span class="pick-emoji">🎵</span> DEADLINE EP</a>
   <a class="top-pick-item" href="https://www.metacritic.com/movie/pompei-below-the-clouds/" target="_blank" rel="noopener"><span class="pick-emoji">🎬</span> Pompei: Below the Clouds</a>
@@ -65,8 +56,7 @@
   <a class="top-pick-item" href="https://opencritic.com/game/16683/hades-ii" target="_blank" rel="noopener"><span class="pick-emoji">🎮</span> Hades II</a>
 </nav>
 
-
-<section class="section">
+<section class="section" id="music">
   <div class="section-header"><span class="section-number">01</span><div class="section-accent-bar bg-music"></div><div><h2 class="section-title c-music">音乐 Music</h2><div class="section-subtitle">New Albums · Industry Deep Dives</div></div></div>
   <div class="subsection-label">新专辑 / 新作品推荐</div>
   <div class="card-grid">
@@ -80,7 +70,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="film">
   <div class="section-header"><span class="section-number">02</span><div class="section-accent-bar bg-film"></div><div><h2 class="section-title c-film">电影 Film</h2><div class="section-subtitle">New Releases · Festival Circuit</div></div></div>
   <div class="subsection-label">新片推荐</div>
   <div class="card-grid">
@@ -89,30 +79,30 @@
   </div>
   <div class="subsection-label">行业深度专题</div>
   <div class="insight-grid">
-    <div class="insight-card"><div class="insight-source">Screen Daily</div><div class="insight-title">影展口碑到商业发行的“断层”问题持续存在</div><div class="insight-body">奖项热度无法自动转化为院线排片与全球上线速度，发行策略仍是关键变量。</div><div class="insight-why">能帮助你判断哪些片值得“现在看”，哪些更适合等平台窗口。</div><a class="insight-link" href="https://www.screendaily.com/" target="_blank" rel="noopener">screendaily.com</a></div>
-    <div class="insight-card"><div class="insight-source">IndieWire</div><div class="insight-title">中预算电影的回流：流媒体与影院的再分工</div><div class="insight-body">类型片与作者向电影在中预算区间重新活跃，平台策略从“量”转向“定位”。</div><div class="insight-why">这直接决定接下来几个月值得优先追踪的片单结构。</div><a class="insight-link" href="https://www.indiewire.com/" target="_blank" rel="noopener">indiewire.com</a></div>
+    <div class="insight-card"><div class="insight-source">Screen Daily</div><div class="insight-title">影展口碑到商业发行的「断层」问题持续存在</div><div class="insight-body">奖项热度无法自动转化为院线排片与全球上线速度，发行策略仍是关键变量。</div><div class="insight-why">能帮助你判断哪些片值得“现在看”，哪些更适合等平台窗口。</div><a class="insight-link" href="https://www.screendaily.com/" target="_blank" rel="noopener">screendaily.com</a></div>
+    <div class="insight-card"><div class="insight-source">IndieWire</div><div class="insight-title">中预算电影的回流：流媒体与影院的再分工</div><div class="insight-body">类型片与作者向电影在中预算区间重新活跃，平台策略从「量」转向「定位」。</div><div class="insight-why">这直接决定接下来几个月值得优先追踪的片单结构。</div><a class="insight-link" href="https://www.indiewire.com/" target="_blank" rel="noopener">indiewire.com</a></div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="tv">
   <div class="section-header"><span class="section-number">03</span><div class="section-accent-bar bg-tv"></div><div><h2 class="section-title c-tv">剧集 TV / Series</h2><div class="section-subtitle">New Shows · Streaming Picks</div></div></div>
   <div class="subsection-label">新剧 / 新季推荐</div>
   <div class="card-grid">
-    <article class="card"><div class="card-accent-dot bg-tv"></div><div class="card-genre">犯罪剧 · 英国</div><h3 class="card-title">This City Is Ours</h3><p class="card-artist">平台：BBC / 国际发行</p><div class="card-divider"></div><p class="card-reason">该剧口碑进入“可追线以上”，核心优势在角色关系与家庭权力冲突的持续推进。不是快节奏爽剧，但张力稳定。</p><p class="card-audience">喜欢英式犯罪叙事、重人物与关系线的观众。</p><div class="card-footer"><span class="score-badge mid">Metacritic 71</span><span class="score-badge mid">IMDb 7.0+</span></div><div class="card-links"><a class="card-link" href="https://www.metacritic.com/tv/this-city-is-ours-a-crime-family-saga/" target="_blank" rel="noopener">Metacritic</a><a class="card-link" href="https://www.imdb.com/" target="_blank" rel="noopener">IMDb</a></div></article>
+    <article class="card"><div class="card-accent-dot bg-tv"></div><div class="card-genre">犯罪剧 · 英国</div><h3 class="card-title">This City Is Ours</h3><p class="card-artist">平台：BBC / 国际发行</p><div class="card-divider"></div><p class="card-reason">该剧口碑进入「可追线以上」，核心优势在角色关系与家庭权力冲突的持续推进。不是快节奏爽剧，但张力稳定。</p><p class="card-audience">喜欢英式犯罪叙事、重人物与关系线的观众。</p><div class="card-footer"><span class="score-badge mid">Metacritic 71</span><span class="score-badge mid">IMDb 7.0+</span></div><div class="card-links"><a class="card-link" href="https://www.metacritic.com/tv/this-city-is-ours-a-crime-family-saga/" target="_blank" rel="noopener">Metacritic</a><a class="card-link" href="https://www.imdb.com/" target="_blank" rel="noopener">IMDb</a></div></article>
     <article class="card"><div class="card-accent-dot bg-tv"></div><div class="card-genre">喜剧剧情 · 美国</div><h3 class="card-title">DTF St. Louis</h3><p class="card-artist">平台：Streaming</p><div class="card-divider"></div><p class="card-reason">在同档新剧中属于开局稳定的一类，文本轻巧但不空洞，适合作为周末轻追更备选。人物关系的尴尬与幽默平衡做得不错。</p><p class="card-audience">喜欢都市关系喜剧、希望轻松入戏的观众。</p><div class="card-footer"><span class="score-badge mid">Metacritic 70</span><span class="score-badge pending">RT 待补全</span></div><div class="card-links"><a class="card-link" href="https://www.metacritic.com/tv/dtf-st-louis/" target="_blank" rel="noopener">Metacritic</a><a class="card-link" href="https://www.rottentomatoes.com/browse/tv_series_browse/" target="_blank" rel="noopener">Rotten Tomatoes</a></div></article>
   </div>
   <div class="subsection-label">行业深度专题</div>
   <div class="insight-grid">
     <div class="insight-card"><div class="insight-source">Deadline TV</div><div class="insight-title">续订逻辑继续向“留存效率”倾斜</div><div class="insight-body">平台减少高成本试错，更看重用户留存与长尾观看完成率。</div><div class="insight-why">对观众而言，这能预测哪些剧更有概率拿到完整叙事周期。</div><a class="insight-link" href="https://deadline.com/v/tv/" target="_blank" rel="noopener">deadline.com</a></div>
-    <div class="insight-card"><div class="insight-source">Vulture</div><div class="insight-title">“中体量剧集”回潮与主创策略变化</div><div class="insight-body">主创更强调单季叙事完整性，以应对不确定的续订环境。</div><div class="insight-why">帮助你优先选择“本季就能获得满足”的作品。</div><a class="insight-link" href="https://www.vulture.com/" target="_blank" rel="noopener">vulture.com</a></div>
+    <div class="insight-card"><div class="insight-source">Vulture</div><div class="insight-title">「中体量剧集」回潮与主创策略变化</div><div class="insight-body">主创更强调单季叙事完整性，以应对不确定的续订环境。</div><div class="insight-why">帮助你优先选择「本季就能获得满足」的作品。</div><a class="insight-link" href="https://www.vulture.com/" target="_blank" rel="noopener">vulture.com</a></div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="books">
   <div class="section-header"><span class="section-number">04</span><div class="section-accent-bar bg-books"></div><div><h2 class="section-title c-books">书籍 Books</h2><div class="section-subtitle">New Books · Publishing Insights</div></div></div>
   <div class="subsection-label">新书推荐</div>
   <div class="card-grid single">
-    <article class="card"><div class="card-accent-dot bg-books"></div><div class="card-genre">文学奖观察 · 英语出版</div><h3 class="card-title">Women's Prize 2026 长名单作品群</h3><p class="card-artist">多位作者 / 英国出版市场</p><div class="card-divider"></div><p class="card-reason">奖项长名单是低成本建立阅读优先级的方式：它并不保证“最流行”，但通常保证“值得认真读”。今天可优先从名单中的中篇与首作切入。</p><p class="card-audience">希望快速建立春季阅读清单、偏好文学性作品的读者。</p><div class="card-footer"><span class="score-badge mid">Goodreads 3.8+（多书）</span><span class="score-badge mid">专业媒体持续覆盖</span></div><div class="card-links"><a class="card-link" href="https://www.thebookseller.com/news" target="_blank" rel="noopener">The Bookseller</a><a class="card-link" href="https://www.goodreads.com/" target="_blank" rel="noopener">Goodreads</a></div></article>
+    <article class="card"><div class="card-accent-dot bg-books"></div><div class="card-genre">文学奖观察 · 英语出版</div><h3 class="card-title">Women's Prize 2026 长名单作品群</h3><p class="card-artist">多位作者 / 英国出版市场</p><div class="card-divider"></div><p class="card-reason">奖项长名单是低成本建立阅读优先级的方式：它并不保证「最流行」，但通常保证「值得认真读」。今天可优先从名单中的中篇与首作切入。</p><p class="card-audience">希望快速建立春季阅读清单、偏好文学性作品的读者。</p><div class="card-footer"><span class="score-badge mid">Goodreads 3.8+（多书）</span><span class="score-badge mid">专业媒体持续覆盖</span></div><div class="card-links"><a class="card-link" href="https://www.thebookseller.com/news" target="_blank" rel="noopener">The Bookseller</a><a class="card-link" href="https://www.goodreads.com/" target="_blank" rel="noopener">Goodreads</a></div></article>
   </div>
   <div class="subsection-label">行业深度专题</div>
   <div class="insight-grid">
@@ -121,33 +111,33 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="games">
   <div class="section-header"><span class="section-number">05</span><div class="section-accent-bar bg-games"></div><div><h2 class="section-title c-games">游戏 Games</h2><div class="section-subtitle">High-Score Picks · Industry Watch</div></div></div>
   <div class="subsection-label">新游戏推荐</div>
   <div class="card-grid">
-    <article class="card"><div class="card-accent-dot bg-games"></div><div class="card-genre">Roguelike Action · PC / Console</div><h3 class="card-title">Hades II</h3><p class="card-artist">Supergiant Games</p><div class="card-divider"></div><p class="card-reason">高分并非只来自战斗手感，而是叙事推进与成长循环耦合得非常紧密。它是本周最稳的“长线投入型”游戏之一。</p><p class="card-audience">喜欢高重玩价值、希望战斗与剧情双在线的玩家。</p><div class="card-footer"><span class="score-badge high">OpenCritic 95</span><span class="score-badge high">Metacritic 90+</span></div><div class="card-links"><a class="card-link" href="https://opencritic.com/game/16683/hades-ii" target="_blank" rel="noopener">OpenCritic</a><a class="card-link" href="https://www.metacritic.com/game/" target="_blank" rel="noopener">Metacritic</a></div></article>
-    <article class="card"><div class="card-accent-dot bg-games"></div><div class="card-genre">Platformer · PS5</div><h3 class="card-title">Astro Bot</h3><p class="card-artist">Team Asobi</p><div class="card-divider"></div><p class="card-reason">在玩法完成度、镜头表达和反馈节奏上非常统一，是“即玩即开心”的高分样本。适合周末短时段高质量游玩。</p><p class="card-audience">偏爱明快手感与创意关卡设计的主机玩家。</p><div class="card-footer"><span class="score-badge high">OpenCritic 95</span><span class="score-badge high">IGN 9+</span></div><div class="card-links"><a class="card-link" href="https://opencritic.com/game/17118/astro-bot" target="_blank" rel="noopener">OpenCritic</a><a class="card-link" href="https://www.ign.com/reviews" target="_blank" rel="noopener">IGN</a></div></article>
+    <article class="card"><div class="card-accent-dot bg-games"></div><div class="card-genre">Roguelike Action · PC / Console</div><h3 class="card-title">Hades II</h3><p class="card-artist">Supergiant Games</p><div class="card-divider"></div><p class="card-reason">高分不只是因为打起来爽，更因为叙事推进和成长循环咬得很紧。它是本周最值得长期投入的一款游戏。</p><p class="card-audience">喜欢高重玩价值、希望战斗与剧情双在线的玩家。</p><div class="card-footer"><span class="score-badge high">OpenCritic 95</span><span class="score-badge high">Metacritic 90+</span></div><div class="card-links"><a class="card-link" href="https://opencritic.com/game/16683/hades-ii" target="_blank" rel="noopener">OpenCritic</a><a class="card-link" href="https://www.metacritic.com/game/" target="_blank" rel="noopener">Metacritic</a></div></article>
+    <article class="card"><div class="card-accent-dot bg-games"></div><div class="card-genre">Platformer · PS5</div><h3 class="card-title">Astro Bot</h3><p class="card-artist">Team Asobi</p><div class="card-divider"></div><p class="card-reason">它的好，主要在于玩法、镜头和反馈节奏非常统一，属于上手就舒服、很容易玩得开心的那类作品。</p><p class="card-audience">偏爱明快手感与创意关卡设计的主机玩家。</p><div class="card-footer"><span class="score-badge high">OpenCritic 95</span><span class="score-badge high">IGN 9+</span></div><div class="card-links"><a class="card-link" href="https://opencritic.com/game/17118/astro-bot" target="_blank" rel="noopener">OpenCritic</a><a class="card-link" href="https://www.ign.com/reviews" target="_blank" rel="noopener">IGN</a></div></article>
   </div>
   <div class="subsection-label">行业深度专题</div>
   <div class="insight-grid">
-    <div class="insight-card"><div class="insight-source">GamesIndustry.biz</div><div class="insight-title">订阅库与买断制的“共存期”正在拉长</div><div class="insight-body">厂商更重视首发阶段的可见度策略，而不再单押单一商业模型。</div><div class="insight-why">这将影响你“首发入手还是等入库”的决策节奏。</div><a class="insight-link" href="https://www.gamesindustry.biz/" target="_blank" rel="noopener">gamesindustry.biz</a></div>
+    <div class="insight-card"><div class="insight-source">GamesIndustry.biz</div><div class="insight-title">订阅库与买断制的「共存期」正在拉长</div><div class="insight-body">厂商更重视首发阶段的可见度策略，而不再单押单一商业模型。</div><div class="insight-why">这将影响你“首发入手还是等入库”的决策节奏。</div><a class="insight-link" href="https://www.gamesindustry.biz/" target="_blank" rel="noopener">gamesindustry.biz</a></div>
     <div class="insight-card"><div class="insight-source">Eurogamer</div><div class="insight-title">中小团队作品的口碑放大路径</div><div class="insight-body">在宣发预算有限情况下，评测质量与社区传播依然是独立游戏破圈核心。</div><div class="insight-why">有助于提前发现下一批“非大厂但高品质”作品。</div><a class="insight-link" href="https://www.eurogamer.net/reviews" target="_blank" rel="noopener">eurogamer.net</a></div>
   </div>
 </section>
 
 <section class="trends-block">
   <h2 class="trends-heading">跨领域趋势观察</h2>
-  <div class="trend-item"><span class="trend-idx">01</span><p class="trend-text">高口碑内容的共同点是“制作完成度高 + 入口友好”，用户更愿意为确定性体验付费。</p><a class="trend-link" href="https://www.metacritic.com/" target="_blank" rel="noopener">↗</a></div>
-  <div class="trend-item"><span class="trend-idx">02</span><p class="trend-text">平台分发规则持续影响内容命运，创作质量之外，“被看见”的机制成为第二战场。</p><a class="trend-link" href="https://www.musicbusinessworldwide.com/" target="_blank" rel="noopener">↗</a></div>
-  <div class="trend-item"><span class="trend-idx">03</span><p class="trend-text">编辑筛选和专业评论回归，正在为用户重建更省时的文化消费路径。</p><a class="trend-link" href="https://lithub.com/" target="_blank" rel="noopener">↗</a></div>
+  <div class="trend-item"><span class="trend-idx">01</span><p class="trend-text">今天各领域里表现好的内容，有个共同点：完成度高，而且上手门槛不高，用户更愿意为这种确定性体验买单。</p><a class="trend-link" href="https://www.metacritic.com/" target="_blank" rel="noopener">↗</a></div>
+  <div class="trend-item"><span class="trend-idx">02</span><p class="trend-text">平台分发规则还在持续影响内容命运。除了内容本身做得怎么样，能不能被平台推出来，已经成了第二战场。</p><a class="trend-link" href="https://www.musicbusinessworldwide.com/" target="_blank" rel="noopener">↗</a></div>
+  <div class="trend-item"><span class="trend-idx">03</span><p class="trend-text">编辑筛选和专业评论重新变重要了，因为它们能帮用户更快排除噪音，直接找到值得花时间的内容。</p><a class="trend-link" href="https://lithub.com/" target="_blank" rel="noopener">↗</a></div>
 </section>
 
 <footer class="footer-notes">
   <div class="footer-notes-title">备注</div>
   <ul>
-    <li>本期优先采用中国境外媒体、评分站与行业来源。</li>
-    <li>部分条目为周末低波动日的“稳妥优先消费”推荐，适合即时决策。</li>
-    <li>评分与链接整理时间：2026-03-08 08:35–09:00（Asia/Shanghai）。</li>
+    <li>本期优先参考中国境外媒体、评分站和行业来源。</li>
+    <li>今天有些推荐偏向“稳妥优先”，适合你现在就决定要不要看、听、读或玩。</li>
+    <li>评分和链接最后核对时间：2026-03-08 08:35–09:00（Asia/Shanghai）。</li>
   </ul>
   <div class="footer-sig"><span class="footer-sig-name">Generated by Salty · Editorial Edition</span><span class="footer-sig-time">2026-03-08 · 09:00 CST</span></div>
 </footer>
