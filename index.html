@@ -12,9 +12,9 @@
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
   body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;min-height:100vh}
   body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000}
-  .page{max-width:880px;margin:0 auto;padding:0 20px 80px}.masthead{padding:60px 0 40px;border-bottom:2px solid var(--ink)}.masthead-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}.masthead-title{font-family:var(--serif);font-size:clamp(38px,7vw,68px);font-weight:900;line-height:1.05;letter-spacing:-.02em;margin-bottom:6px}.masthead-title em{font-style:italic;color:var(--accent-1)}.masthead-date{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.08em;margin-top:12px}
+  .page{max-width:880px;margin:0 auto;padding:0 20px 80px}.site-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0 16px;border-bottom:1px solid var(--rule-light)}.site-nav-brand{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.site-nav-links{display:flex;flex-wrap:wrap;gap:10px 18px}.site-nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none}.site-nav-links a:hover{color:var(--accent-1)}.masthead{padding:40px 0 40px;border-bottom:2px solid var(--ink)}.masthead-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}.masthead-title{font-family:var(--serif);font-size:clamp(38px,7vw,68px);font-weight:900;line-height:1.05;letter-spacing:-.02em;margin-bottom:6px}.masthead-title em{font-style:italic;color:var(--accent-1)}.masthead-date{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.08em;margin-top:12px}
   .overview{background:var(--ink);color:var(--cream);padding:36px 40px;position:relative;overflow:hidden}.overview::after{content:'今日';position:absolute;right:-10px;top:-20px;font-family:var(--serif);font-size:130px;font-weight:900;opacity:.05;line-height:1}.overview-label{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px}.overview-label::after{content:'';flex:1;height:1px;background:var(--gold);opacity:.3;max-width:60px}.overview-meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-bottom:24px}.meta-chip{font-family:var(--mono);font-size:11px;color:rgba(250,248,244,.6);letter-spacing:.05em}.meta-chip span{color:rgba(250,248,244,.9)}.overview-bullets{list-style:none;display:flex;flex-direction:column;gap:10px}.overview-bullets li{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.6;color:rgba(250,248,244,.85)}.overview-bullets li::before{content:'–';color:var(--gold)}
-  .top-picks{background:var(--paper-2);border-bottom:1px solid var(--rule);padding:20px 40px;display:flex;flex-wrap:wrap;gap:6px 28px;align-items:center}.top-picks-label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.top-pick-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink);text-decoration:none;font-weight:600}.top-pick-item:hover{color:var(--accent-1)}
+  .top-picks{background:var(--paper-2);border-bottom:1px solid var(--rule);padding:20px 40px;display:flex;flex-wrap:wrap;gap:6px 28px;align-items:center}.top-picks-label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.top-pick-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink);text-decoration:none;font-weight:600}.top-pick-item:hover{color:var(--accent-1)}.edition-access{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:22px}.edition-card,.archive-card{background:var(--cream);border:1px solid var(--rule-light);border-radius:var(--r-md);padding:18px 20px}.edition-label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}.edition-title{font-family:var(--serif);font-size:24px;line-height:1.2;margin-bottom:8px}.edition-copy,.archive-copy{font-size:14px;color:#4f4943}.edition-actions,.archive-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.btn-primary,.btn-secondary{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 16px;text-decoration:none;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.btn-primary{background:var(--accent-1);color:#fff}.btn-secondary{border:1px solid var(--rule);color:var(--ink)}.archive-mini-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:12px}.archive-mini-list a{color:var(--ink);text-decoration:none;font-size:14px}.archive-mini-list a:hover{text-decoration:underline}
   .section{margin-top:60px}.section-header{display:flex;align-items:center;gap:16px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid var(--rule)}.section-number{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--muted)}.section-accent-bar{width:4px;height:36px;border-radius:2px}.section-title{font-family:var(--serif);font-size:28px;font-weight:700}.section-subtitle{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
   .subsection-label{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:12px}.subsection-label::after{content:'';flex:1;height:1px;background:var(--rule-light)}
   .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:36px}.card-grid.single{grid-template-columns:1fr}
@@ -27,7 +27,16 @@
 </head>
 <body>
 <div class="page">
-<header class="masthead">
+<nav class="site-nav">
+  <div class="site-nav-brand">Global Culture Briefing</div>
+  <div class="site-nav-links">
+    <a href="#today">今日晨报</a>
+    <a href="#top-picks">今日首选</a>
+    <a href="./archive/">最近 10 期</a>
+    <a href="https://github.com/SalSensei/culture-briefing" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</nav>
+<header class="masthead" id="today">
   <div class="masthead-eyebrow">Global Culture Briefing</div>
   <h1 class="masthead-title">全球文化<br><em>资讯晨报</em></h1>
   <div class="masthead-date">2026 · 03 · 08 &nbsp;/&nbsp; Sunday &nbsp;/&nbsp; Asia/Shanghai 09:00</div>
@@ -49,13 +58,36 @@
   </ul>
 </section>
 
-<nav class="top-picks">
+<nav class="top-picks" id="top-picks">
   <span class="top-picks-label">今日首选</span>
   <a class="top-pick-item" href="https://pitchfork.com/reviews/albums/blackpink-deadline-ep/" target="_blank" rel="noopener"><span class="pick-emoji">🎵</span> DEADLINE EP</a>
   <a class="top-pick-item" href="https://www.metacritic.com/movie/pompei-below-the-clouds/" target="_blank" rel="noopener"><span class="pick-emoji">🎬</span> Pompei: Below the Clouds</a>
   <a class="top-pick-item" href="https://www.thebookseller.com/news" target="_blank" rel="noopener"><span class="pick-emoji">📚</span> Women's Prize 长名单</a>
   <a class="top-pick-item" href="https://opencritic.com/game/16683/hades-ii" target="_blank" rel="noopener"><span class="pick-emoji">🎮</span> Hades II</a>
 </nav>
+
+<section class="edition-access">
+  <article class="edition-card">
+    <div class="edition-label">Latest Edition</div>
+    <h2 class="edition-title">今天这一期，就是首页本体</h2>
+    <p class="edition-copy">如果你每天只点一个链接，就点首页。这里永远展示最新一期《全球文化晨报》的完整正文，是对外分享和日常阅读的主入口。</p>
+    <div class="edition-actions">
+      <a class="btn-primary" href="#today">阅读本期</a>
+      <a class="btn-secondary" href="https://salsensei.github.io/culture-briefing/" target="_blank" rel="noopener">复制首页链接</a>
+    </div>
+  </article>
+  <aside class="archive-card">
+    <div class="edition-label">Recent 10 Issues</div>
+    <p class="archive-copy">站点只保留最近 10 期，方便快速回看，不把归档做成无穷无尽的文件墓地。</p>
+    <ul class="archive-mini-list">
+      <li><a href="./archive/2026-03-08.html">2026-03-08｜全球文化晨报</a></li>
+      <li><a href="./archive/">查看完整最近 10 期归档 →</a></li>
+    </ul>
+    <div class="archive-actions">
+      <a class="btn-secondary" href="./archive/">进入归档页</a>
+    </div>
+  </aside>
+</section>
 
 <section class="section">
   <div class="section-header"><span class="section-number">01</span><div class="section-accent-bar bg-music"></div><div><h2 class="section-title c-music">音乐 Music</h2><div class="section-subtitle">New Albums · Industry Deep Dives</div></div></div>
